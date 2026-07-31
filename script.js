@@ -20,7 +20,7 @@ function addItem() {
     if (counter % 2 != 0) { //wenn zum ersten mal im zweier cyrcle geclicked wird
         userInputField.style.display = 'flex';
     }
-    else{ //wenn zum ersten mal im zweier cyrcle geclicked wurde
+    else{ //wenn zum zweiten mal im zweier cyrcle geclicked wurde
         userInputField.style.display = 'none';
         
         const item = document.createElement('div');
