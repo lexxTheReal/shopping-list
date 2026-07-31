@@ -16,16 +16,14 @@ function addItem() {
     item.textContent = 'Neues Item';
 
     item.addEventListener('click', () => {
-        item.remove();
-        updateContainerHeight();
+        item.style.textDecoration = 'line-through';
+        setTimeout(() => {
+            item.remove();
+            updateContainerHeight();
+            alert(item.textContent + " has been removed!")
+        }, 750)
     });
-
     container.appendChild(item);
-    updateContainerHeight();
-}
-
-function delItem(event) {
-    event.currentTarget.remove();
     updateContainerHeight();
 }
 
