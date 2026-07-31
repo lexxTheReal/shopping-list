@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>shopping-list</title>
 </head>
 <body>
-    <h1>Shopping List</h1>
-    <nav>
-        <span>item</span>
-        <span>item</span>
-        <span>item</span>
-    </nav>
+    <main>
+        <h1>Shopping List</h1>
+
+        <div id="userIndicator">add Items</div>
+
+        <div id="item-container" class="item-container"></div>  
+
+        <nav tabindex="0" onclick="addItem()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+        </nav>
+    </main>
 </body>
 </html>
