@@ -68,6 +68,7 @@ main {
 }
 
 main > nav {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,4 +114,15 @@ main > .item-container {
     box-shadow: 
         inset 0 0 5px 1px rgba(255, 255, 255, 0.4),
         0 0 15px 1px rgba(255, 255, 255, 0.2);
+}
+input[type=text] {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50dvw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding-left: 15%;
 }
