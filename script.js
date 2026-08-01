@@ -1,10 +1,13 @@
-function updateContainerHeight() {
-    const count = document.querySelectorAll('#item-container .item').length;
-    const container = document.getElementById('item-container');
-    const userIndicator = document.getElementById('userIndicator');
+const BACKEND_URL = "http://172.0.0.1:5432";
 
-    container.style.display = count === 0 ? 'none' : 'flex';
-    userIndicator.style.display = count === 0 ? 'block' : 'none';
+
+function updateContainerHeight() {
+    const COUNT = document.querySelectorAll('#item-container .item').length;
+    const CONTAINER = document.getElementById('item-container');
+    const USER_INDICATOR = document.getElementById('userIndicator');
+
+    CONTAINER.style.display = COUNT === 0 ? 'none' : 'flex';
+    USER_INDICATOR.style.display = COUNT === 0 ? 'block' : 'none';
 }
 
 let counter = 0;
