@@ -38,7 +38,6 @@ function addItem() {
             setTimeout(() => {
                 item.remove();
                 updateContainerHeight();
-                alert(item.textContent + " has been removed!")
             }, 750)
         });
         container.appendChild(item);
